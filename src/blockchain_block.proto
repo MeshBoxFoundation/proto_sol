@@ -1,0 +1,9 @@
+syntax = "proto3";
+package smartmesh;
+option go_package = "github.com/MeshBoxFoundation/proto/golang/transaction";
+
+import "src/blockchain_block_v1.proto";
+
+message blockchain_block {
+  oneof block { blockchain_block_v1 v1 = 1; }
+}

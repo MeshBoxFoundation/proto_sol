@@ -1,0 +1,5 @@
+syntax = "proto3";
+package smartmesh;
+option go_package = "github.com/MeshBoxFoundation/proto/golang/transaction";
+
+message blockchain_txn_gen_price_oracle_v1 { uint64 price = 1; }

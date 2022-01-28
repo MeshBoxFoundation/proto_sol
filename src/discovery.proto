@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package smartmesh;
+option go_package = "github.com/MeshBoxFoundation/proto/golang/transaction";
+
+message discovery_start {
+  bytes hotspot = 1;
+  repeated bytes packets = 2;
+  bytes signature = 3;
+}

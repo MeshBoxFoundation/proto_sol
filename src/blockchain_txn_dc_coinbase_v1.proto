@@ -1,0 +1,8 @@
+syntax = "proto3";
+package smartmesh;
+option go_package = "github.com/MeshBoxFoundation/proto/golang/transaction";
+
+message blockchain_txn_dc_coinbase_v1 {
+  bytes payee = 1;
+  uint64 amount = 2;
+}

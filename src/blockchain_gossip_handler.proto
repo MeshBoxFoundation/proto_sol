@@ -1,0 +1,10 @@
+syntax = "proto3";
+package smartmesh;
+option go_package = "github.com/MeshBoxFoundation/proto/golang/transaction";
+
+message blockchain_gossip_block {
+  bytes from = 1;
+  bytes block = 2;
+  bytes hash = 3;
+  uint64 height = 4;
+}

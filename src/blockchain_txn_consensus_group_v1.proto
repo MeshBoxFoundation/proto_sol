@@ -1,0 +1,10 @@
+syntax = "proto3";
+package smartmesh;
+option go_package = "github.com/MeshBoxFoundation/proto/golang/transaction";
+
+message blockchain_txn_consensus_group_v1 {
+  repeated bytes members = 1;
+  bytes proof = 2;
+  uint64 height = 3;
+  uint32 delay = 4;
+}
