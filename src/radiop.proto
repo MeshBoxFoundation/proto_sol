@@ -91,9 +91,9 @@ message RadioRxPacket {
   // Error Correcting Code rate of this packet.
   Coderate coderate = 8;
   // Average packet RSSI in dB.
-  float rssi = 9;
+  string rssi = 9;
   // Average packet SNR, in dB.
-  float snr = 10;
+  string snr = 10;
   // This packet's payload.
   bytes payload = 11;
 }
